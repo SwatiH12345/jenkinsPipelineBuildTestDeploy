@@ -11,14 +11,13 @@ node('master') {
           success {
               junit 'target/surefire-reports/**/*.xml' 
           }
-      }
-   }
+   
 
 
-   stage 'Test Case'
-        echo 'Test Case will running'
+   stage 'Deploy'
+        echo 'Deplyoing Docker Image'
 
-   stage 'Reporting'
+   stage 'Testing'
         echo 'Reporting Getting Creating'
 
    stage 'Job Status Status'
